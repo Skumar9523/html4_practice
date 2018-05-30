@@ -1,0 +1,16 @@
+.wrap{width: 500px;
+	
+	margin: auto;
+	 }
+.content	 
+{background: blue;
+float:left;
+width: 70%;
+}
+aside{background: brown;text-align: center;
+	float:left;width: 30%;
+}
+aside ul{
+	list-style: none;
+	padding-left: 0;
+}
