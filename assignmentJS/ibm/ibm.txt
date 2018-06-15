@@ -1,0 +1,19 @@
+var obj=new object();
+obj.name="San";
+obj.last=function(){return obj.name + "kumar";}	
+
+
+
+var obj={
+	 name:"san",
+	 last=function(){return myobj.name + "kumar";}
+}
+
+
+function myObject() {
+  this.name = "san";
+ this.last = function() {
+ return this.name + "kumar";
+}
+ 
+var obj= new Object();

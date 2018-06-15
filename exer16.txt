@@ -1,0 +1,63 @@
+13.)
+
+function flatten(obj) {
+  return obj.reduce(function(temp, el) {
+    var items = Array.isArray(el) ? flatten(el) : [el];
+    return temp.concat(items);
+  }, []);
+}
+var myObj = [5, [22], [[14]], [[4]],[5,6]];
+console.log(flatten(myObj));
+
+Output:
+[5,22,14,4,5,6]
+
+-------------------------------------------------------------------
+
+14.)
+
+var myObj =
+[{'name':'Saurabh', 'age': 30, 'occupation': "Team Leader"},
+{'name':'Anupriya', 'age': 32, 'occupation': "Team Leader"},
+{'name':'Kalyani', 'age': 25, 'occupation': "Programmer"},
+{'name':'Damodaran', 'age': 27, 'occupation': "Programmer"},
+{'name':'Krishnakath', 'age': 22, 'occupation': "Programmer"},
+{'name':'Venketraman', 'age': 28, 'occupation': "Programmer"}];
+
+console.log(myObj.find(x => x.occupation === "Programmer"));
+
+
+
+
+
+-------------------------------------------------------------------
+15.)
+
+var jsonStr = '{"mike":"Book","jason":"sweater","chels":"iPad"}';
+
+var obj = JSON.parse(jsonStr);
+
+console.log(obj.jason);
+
+Output:
+sweater
+
+------------------------------------------------------------------
+16.)
+
+var obj = {
+"One":"1",
+"Two":"2",
+"Three":"3",
+"Four":"4"
+}
+
+
+console.log(Object.values(obj));
+
+Output:
+["1","2","3","4"]
+
+-------------------------------------------------------------------
+
+

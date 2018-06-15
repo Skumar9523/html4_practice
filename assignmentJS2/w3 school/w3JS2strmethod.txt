@@ -1,0 +1,126 @@
+Q1)
+<!DOCTYPE html>
+<html>
+<body>
+
+<p id="demo"></p>
+
+<script>
+var txt = "Hello World";
+document.getElementById("demo").innerHTML = txt.indexOf("World");
+</script>
+
+</body>
+</html>
+
+OUTPUT: 6
+
+-----------------------------------------------------------------------------------------------
+
+Q2)
+
+<!DOCTYPE html>
+<html>
+<body>
+
+<p id="demo"></p>
+
+<script>
+var str = "Apple,Banana,Kiwi";
+document.getElementById("demo").innerHTML = str.slice(6);
+</script>
+
+</body>
+</html>
+
+OUTPUT: Banana,Kiwi
+
+-----------------------------------------------------------------------------------------------
+
+Q3)
+
+<!DOCTYPE html>
+<html>
+<body>
+
+<p id="demo"></p>
+
+<script>
+var txt = "Hello World";
+document.getElementById("demo").innerHTML = txt.replace("World","Universe");
+</script>
+
+</body>
+</html>
+
+OUTPUT: Hello Universe
+
+-----------------------------------------------------------------------------------------------
+
+Q4)
+
+<!DOCTYPE html>
+<html>
+<body>
+
+<p id="demo"></p>
+
+<script>
+var txt = "Hello World";
+document.getElementById("demo").innerHTML = txt.toUpperCase();
+</script>
+
+</body>
+</html>
+
+OUTPUT:
+HELLO WORLD
+
+-----------------------------------------------------------------------------------------------
+
+Q5)
+<!DOCTYPE html>
+<html>
+<body>
+
+<p id="demo"></p>
+
+<script>
+var txt = "Hello World";
+document.getElementById("demo").innerHTML = txt.toLowerCase();
+</script>
+
+</body>
+</html>
+
+OUTPUT:
+hello world
+
+-----------------------------------------------------------------------------------------------
+
+Q6)
+
+<!DOCTYPE html>
+<html>
+<body>
+
+<p id="demo">Display the result here.</p>
+
+<script>
+var str1 = "Hello ";
+var str2 = "World!";
+document.getElementById('demo').innerHTML= str1.concat(str2);
+</script>
+
+</body>
+</html>
+
+OUTPUT:Hello World!
+
+
+
+
+
+
+
+

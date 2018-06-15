@@ -1,0 +1,106 @@
+q1)
+
+
+function tellFortune(noc,pn,gl,jt)
+{ 
+   var output="You will be a " + jt + "in" + gl + ",and married to " + pn + "with" + noc +" kids";
+
+  console.log(output);
+
+}
+
+tellFortune(1,'Ann','America','Doctor');
+tellFortune(2,'Bob','Bombay','Engineer');
+tellFortune(3,'Carol','China','lawyer');
+
+------------------------
+output
+You will be a doctor in America ,and married to Ann with 1 kids
+You will be a Engineer in Bombay ,and married to Bob with 2 kids
+You will be a lawyer in in china ,and married to Carol with 3 kids
+
+---------------------------------------------------------------------------------------------
+q2)
+
+function calculateDogAge(age,rate)
+{
+	 var nage=age*rate;
+	 var output="Your doggie is "+nage+ "years old in dog years."
+  
+   console.log(output);
+
+ }
+  calculateDogAge(3,2);
+  calculateDogAge(7,7);
+  calculateDogAge(5,7);
+
+------------------------
+output
+Your doggie is 6 years old in dog years.
+Your doggie is 49 years old in dog years.
+Your doggie is 35 years old in dog years.
+
+
+----------------------------------------------------------------------------------------
+  q3)
+
+function calculateSupply(age, numPerDay) {
+  var maxAge = 100;
+  var totalNeeded = (numPerDay * 365) * (maxAge - age);
+  var message = 'You will need ' + totalNeeded + ' cups of tea to last you until the ripe old age of ' + maxAge;
+  console.log(message);
+}
+
+calculateSupply(28, 36);
+calculateSupply(28, 2.5);
+calculateSupply(28, 400);
+
+
+OUPUT:
+ You will need 946080 cups of tea to last you until the ripe old age of 100
+
+ You will need 65700 cups of tea to last you until the ripe old age of 100                 
+
+ You will need 10512000 cups of tea to last you until the ripe old age of 100
+----------------------------------------------------------------------------------------------
+   q4)
+
+   function calcCircumfrence(radius)
+    {  
+      var circ=2*3.14*radius;
+      var output="The circumference is" + circ; 
+      console.log(output);
+    }
+
+     function calcArea(radius)
+    {  
+      var area=3.14*radius*radius;
+      var output="The area is " + area; 
+      console.log(output);
+    }
+
+
+    OUTPUT:
+    calcCircumfrence(5);
+    The circumference is31.400000000000002
+-----------------------------------------------------------------------------------------------
+
+    q5)
+
+  function celsiusToFahrenheit(celsius) {
+  var celsiusInF = (celsius*9)/5 + 32;
+  console.log(celsius + '°C is ' + celsiusInF + '°F');
+  }
+
+  function fahrenheitToCelsius(fahrenheit) {
+  var fahrenheitInC = ((fahrenheit - 32)*5)/9;
+  console.log(fahrenheit + '°F is ' + fahrenheitInC + '°C');
+  }
+
+  celsiusToFahrenheit(37);
+  OUTPUT:
+
+  37°C is 98.6°F
+
+
+  

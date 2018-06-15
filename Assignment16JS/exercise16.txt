@@ -1,0 +1,339 @@
+q1)
+
+var d=new Date()
+console.log(+d.getMonth()+"/"+d.getDate()+"/"+d.getFullYear())
+
+OUPUT:
+5/12/2018
+
+--------------------------------------------------------------------------------------------------
+
+q2)
+
+function mx(a,b,c,d,f){
+    if (a>b && a>c && a>d && a>f)
+    {
+        return a;
+    }
+    else if (b>a && b>c && b>d && b>f)
+    {
+        return b
+    }
+    else if (c>a && c>b && c>d && c>f)
+    {
+        return c
+    }
+    else if (d>a && d>c && d>b && d>f)
+    {
+        return d
+    }
+    else
+    {
+        return f
+    }
+}
+
+-----------------------------------------------------------------------------------------------------
+
+q3)
+
+function dash()
+{
+    const n=window.prompt();
+    var num=n.toString();
+    var ans=[num[0]];
+    var i=0;
+    for(i=1;i<=num.length;i++)
+    {
+      
+      if((num[i-1]%2 === 0)&&(num[i]%2 === 0))
+        {
+        ans.push('-', num[i]);
+        }
+      else
+        {
+        ans.push(num[i]);
+        }
+    }
+    return ans.join('')
+}
+---------------------------------------------------------------------------------------------------
+q4)
+function sort(x)
+{
+    x.sort();
+    console.log(x);
+    x.reverse();
+    console.log(x);
+}
+-----------------------------------------------------------------------------------------------
+Q5)
+
+function remove_duplicate()
+{
+A.sort();
+var k=0;
+  for (var i = 0; i < A.length -1; i++) 
+ {
+    
+   if(A[i]!==A[k])
+   {
+   A[k+1]=A[i];
+   k++;
+   }
+    
+    
+  }
+  A=A.slice(0,k+1);
+  return A;
+}
+var A=[1,4,3,1,1,1,-8,4,4,3,2,3,7,6,6,5,-9,-5,3,5,6,2];
+
+console.log(remove_duplicate(A));
+
+OUPUT:
+(9) [-5, -8, -9, 1, 2, 3, 4, 5, 6]
+
+
+-----------------------------------------------------------------------------------------------
+Q6)
+
+function diff_of_arrays(A,B) 
+{    
+    A.sort();
+    B.sort();
+    var C=[];
+    var i=0;
+    var j=0;
+    var a=[];
+
+     while(i<A.length && j<B.length)
+    {
+       if(A[i]<B[j])
+       {
+           C.push(A[i]);
+           i++;
+       }
+        else if(A[i]>B[j])
+       {
+           C.push(B[j]);
+           j++;
+       }
+       else{
+           i++;
+           j++;
+           }
+    }
+    
+    return C;
+    
+}
+
+
+
+var A=[1,4,6,2,6,7,4,8];
+var B=[3,5,6,3,1,8,9,5];
+var C=diff_of_arrays(A,B);
+console.log(C);
+
+OUPUT:
+(9) [2, 3, 3, 4, 4, 5, 5, 6, 7]
+
+
+
+
+Q9)
+
+var student = { 
+name : "David Rayy", 
+sclass : "VI", 
+rollno : 12 };
+
+console.log(Object.keys(student));
+
+OUTPUT:
+(3) ["name", "sclass", "rollno"]
+
+-----------------------------------------------------------------------------------------------
+
+Q10)
+
+var students = [['David', 80], ['Vinoth', 77], ['Divya', 88], ['Ishitha', 95], ['Thomas', 68]];
+
+var Avgmarks = 0;
+
+for (var i=0; i < students.length; i++) {
+        Avgmarks += students[i][1];
+        var avg = (Avgmarks/students.length);
+}
+
+alert("Average grade: " + (Avgmarks)/students.length);
+
+        if (avg < 60){
+          console.log("Grade : F");      
+          } 
+        else if (avg < 70) {
+                console.log("Grade : D"); 
+                  } 
+        else if (avg < 80) 
+             {
+                console.log("Grade : C"); 
+        } else if (avg < 90) {
+                console.log("Grade : B"); 
+        } else if (avg < 100) {
+                console.log("Grade : A"); 
+}
+
+OUTPUT:
+Grade : B
+
+-----------------------------------------------------------------------------------------------
+
+Q11)
+
+function order(str){
+  return str.split('').sort( ).join('');
+}
+console.log(order ("webmaster"));
+
+OUTPUT:
+abeemrstw
+
+-----------------------------------------------------------------------------------------------
+
+Q12)
+
+function char_count(str, letter) 
+{
+ var letter_Count = 0;
+ for (var position = 0; position < str.length; position++) 
+ {
+    if (str.charAt(position) == letter) 
+      {
+      letter_Count += 1;
+      }
+  }
+  return letter_Count;
+}
+
+console.log(char_count('Sandeep', 'e'));
+
+OUTPUT:2
+
+-----------------------------------------------------------------------------------------------
+
+
+13.)
+
+function flatten(obj) {
+  return obj.reduce(function(temp, el) {
+    var items = Array.isArray(el) ? flatten(el) : [el];
+    return temp.concat(items);
+  }, []);
+}
+var myObj = [5, [22], [[14]], [[4]],[5,6]];
+console.log(flatten(myObj));
+
+Output:
+[5,22,14,4,5,6]
+
+-------------------------------------------------------------------
+
+14.)
+
+var myObj =
+[{'name':'Saurabh', 'age': 30, 'occupation': "Team Leader"},
+{'name':'Anupriya', 'age': 32, 'occupation': "Team Leader"},
+{'name':'Kalyani', 'age': 25, 'occupation': "Programmer"},
+{'name':'Damodaran', 'age': 27, 'occupation': "Programmer"},
+{'name':'Krishnakath', 'age': 22, 'occupation': "Programmer"},
+{'name':'Venketraman', 'age': 28, 'occupation': "Programmer"}];
+
+console.log(myObj.find(x => x.occupation === "Programmer"));
+]
+
+---------------------------------------------
+1)for (var x of myObj)
+{
+  if(x['occupation']==['Programmer'])
+  {console.log(x)}
+}
+-----------------------------------------------
+2)function Sort(items) {
+  var length = items.length;
+  for (var i = 0; i < length; i++) {
+    for (var j = 0; j < (length - i - 1); j++) {
+      
+      if(items[j]['age'] < items[j+1]['age']) {
+        
+        var tmp = items[j]['age'];
+        items[j]['age'] = items[j+1]['age']; 
+        items[j+1]['age'] = tmp; 
+      }
+    }        
+  }
+}
+Sort(myObj)
+console.log(myObj)
+-----------------------------------------
+Q3)
+
+var objobj={}
+for (var z of myObj)
+{
+  objobj[z['occupation']]=[];
+  
+}
+for (var z of myObj)
+{
+  objobj[z['occupation']].push(z);
+}
+for (var k in objobj)
+{
+  for (var l of objobj[k])
+  {
+    delete l['occupation']
+  }
+}
+console.log(objobj)
+
+-----------------------------------------
+Q4)
+function getName(item, index) {
+    var fullname = item.name;
+    return fullname;
+}
+console.log(myObj.map(getName))
+
+
+
+-------------------------------------------------------------------
+15.)
+
+var jsonStr = '{"mike":"Book","jason":"sweater","chels":"iPad"}';
+
+var obj = JSON.parse(jsonStr);
+
+console.log(obj.jason);
+
+Output:
+sweater
+
+------------------------------------------------------------------
+16.)
+
+var obj = {
+"One":"1",
+"Two":"2",
+"Three":"3",
+"Four":"4"
+}
+
+
+console.log(Object.values(obj));
+
+Output:
+["1","2","3","4"]
+
+-------------------------------------------------------------------
+

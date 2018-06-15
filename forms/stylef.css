@@ -1,0 +1,11 @@
+form li{
+	list-style: none; 
+	margin-bottom: 20px;
+}
+
+label {display:block;
+	} 
+textarea{
+	height:120px;
+	width:400px;
+}

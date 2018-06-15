@@ -1,0 +1,113 @@
+Q1)
+
+var student = { 
+name : "David Rayy", 
+sclass : "VI", 
+rollno : 12 };
+
+console.log(student);
+
+OUTPUT:
+{"name":"David Rayy","sclass":"VI","rollno":12}
+
+-----------------------------------------------------------------------------------------------
+
+
+Q2)
+
+var student =  { 
+  name : "David Rayy", 
+  sclass : "VI", 
+  rollno : 12  };
+console.log(student);
+delete student.rollno;
+console.log(student);
+
+OUTPUT:
+{"name":"David Rayy","sclass":"VI","rollno":12}
+{"name":"David Rayy","sclass":"VI"}
+
+
+-----------------------------------------------------------------------------------------------
+
+Q3)
+
+var student = { 
+name : "Sandeep Kumar", 
+sclass : "VI", 
+rollno : 12 };
+
+console.log(Object.keys(student));
+
+OUPUT:
+["name", "sclass", "rollno"]
+
+-----------------------------------------------------------------------------------------------
+
+Q4)
+
+var library=[
+  
+  {title:'XYZ', author:'xyz', readingstatus:true},
+  {title:'PQR', author:'pqr', readingstatus:false},
+  {title:'ABC', author:'abc', readingstatus:true}
+  ];
+for (i=0; i<library.length ; i++)
+{ var book="'"+ library[i].title + "'"
+    + " by " + 	      library[i].author + ".";
+ 
+ if (library[i].readingstatus)
+ {console.log("Already Read " + book);
+ }else
+ {console.log("Not Read " + book);
+ }
+}
+
+OUPUT:
+Already Read 'XYZ' by xyz.
+Not Read 'PQR' by pqr.
+Already Read 'ABC' by abc.
+
+-----------------------------------------------------------------------------------------------
+
+Q5)
+
+function Cylinder(height, radius) {
+    this.height = height;
+    this.radius = radius;
+    this.volume = function () {
+    return (Math.PI * radius * radius * height);
+}}
+var cylin = new Cylinder(10, 4);
+console.log(cylin.volume().toFixed(2));
+
+OUPUT:
+502.65
+
+-----------------------------------------------------------------------------------------------
+
+
+Q6)
+Array.prototype.bubbleSort_algo = function() 
+{
+var is_sorted = false;
+ while (!is_sorted) 
+ {
+    is_sorted = true;
+    for (var n = 0; n < this.length - 1; n++) 
+    {
+      if (this[n] > this[n+1]){
+        var x = this[n+1];
+        this[n+1] = this[n];
+        this[n] = x;
+        is_sorted = false;
+      }
+    }
+  }
+  return this;
+};
+
+console.log([6,4,0, 3,-2,1].bubbleSort_algo());
+
+OUPUT:
+[-2,0,1,3,4,6]

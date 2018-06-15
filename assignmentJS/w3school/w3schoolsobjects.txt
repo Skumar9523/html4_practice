@@ -1,0 +1,47 @@
+
+Q1)
+
+<!DOCTYPE html>
+<html>
+<body>
+
+<p id="demo">Display the result here.</p>
+
+<script>
+var person = {firstName:"John", lastName:"Doe"};
+document.getElementById("demo").innerHTML = person.firstName;
+</script>
+
+</body>
+</html>
+
+
+OUTPUT:JOHN
+
+-----------------------------------------------------------------------------------
+
+Q2)
+<!DOCTYPE html>
+<html>
+<body>
+
+<p id="demo"></p>
+
+<script>
+var person = {firstName:"John", lastName:"Doe", country: "USA"};
+document.getElementById("demo").innerHTML = person.country;
+</script>
+
+</body>
+</html>
+
+OUTPUT:USA
+---------------------------------------------------------------------------------------
+Q3)
+var person={
+	name="John",age=50;
+}
+console.log(person.name + " is " + person.age + " years old")
+
+OUTPUT
+John is 50 years old.

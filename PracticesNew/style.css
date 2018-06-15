@@ -1,0 +1,16 @@
+.wrap{width: 80%;
+	background: green;
+	margin: auto;
+	 }
+.content	 
+{background: blue;
+ float: left;
+width: 80%;
+}
+aside{background: brown;
+	float:left;width: 20%;
+}
+aside ul{
+	list-style: none;
+	padding-left: 5;
+}
